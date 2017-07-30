@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+html, body, h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #FDFDFD
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  background-color: darken(#FDFDFD, 20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      background-color: darken(#FDFDFD, 50%);
+    }
+  }
+}
