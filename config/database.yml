@@ -20,6 +20,6 @@ test:
   <<: *default
   database: wwoof_test
 
-  production:
-    <<: *default
-    url: <%= ENV["DATABASE_URL"] %>
+production:
+  <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
