@@ -3,6 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .header {
+  margin-top: 50px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -53,20 +55,26 @@
 .footer {
   padding: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 
-  .footer-image {
-    width: auto;
-    height: 100px;
-    padding: 40px;
-  }
-
-  .section {
-    text-align: center;
-    padding: 20px;
+  .body {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
+
+    .footer-image {
+      width: auto;
+      height: 100px;
+      padding: 40px;
+    }
+
+    .section {
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%;
+    }
   }
 }
