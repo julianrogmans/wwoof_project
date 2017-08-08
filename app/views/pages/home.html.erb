@@ -1,1 +1,50 @@
-<h1>Hello</h1>
+<%= render "navigation" %>
+<h1 class="header">WWOOFing All 50 States In 1 Year!</h1>
+<section class="map-callouts">
+  <div class="map-callout hidden">
+    <p>
+      It started as a simple idea. What would it take to go WWOOF
+      for 1 week on a farm, in every state, for a year. A simple idea...
+      and then it grew
+    </p>
+  </div>
+  <div class="map-callout hidden">
+    <p>
+      I wanted to try and include my software development skills as a set out
+      on this adventure. Which is where I am today, sitting at home coding
+      out this page that you are now looking at
+    </p>
+  </div>
+  <div class="map-callout hidden">
+    <p>
+      And as time goes forward I am looking for feedback and ideas for how
+      to make a trip like this into a truely once in a lifetime experience
+    </p>
+  </div>
+</section>
+
+<section class="schedule">
+  <h2 class="header">Schedule</h2>
+  <%= image_tag('schedule.png', class: 'schedule-image') %>
+</section>
+
+<footer class="footer">
+  <h2 class="header">How is this being recorded?</h2>
+  <div class="body">
+    <div class="section blog">
+      <!-- RSS by Mitja Schneehage from the Noun Project -->
+      <%= image_tag('blog.png', class: 'footer-image') %>
+      Every week on technology day I will spend time transforming my field notes into a digestable blog post detailing the weeks events. My hope is that with all the different things to learn and the different plants, animals and things that I will be helping with, there will be no shortage of things to write about.
+    </div>
+    <div class="section book">
+      <!-- Book by Arthur Shlain from the Noun Project -->
+      <%= image_tag('book.png', class: 'footer-image') %>
+      By the end of the year I hope to (if logic stands) have a collection of 50 blog posts describing the trip. From that point it will only take some crossing of I's and dotting of T's to turn those blog posts into a book that I can then sell on amazon.
+    </div>
+    <div class="section youtube">
+      <!-- play by Souvik Maity from the Noun Project -->
+      <%= image_tag('youtube.png', class: 'footer-image') %>
+      The other way that I would document the trip would be through live YouTube streams once a week from the new location that I am in. I am also thinking it would be fun to bring my drone and get some awesome arial videography.
+    </div>
+  </div>
+</footer>
