@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def blog
+    @posts = Post.all.order(created_at: :desc)
   end
 
   def faq

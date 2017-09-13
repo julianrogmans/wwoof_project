@@ -1,1 +1,12 @@
-<%= render "navigation" %>
+<section id="blog">
+  <% @posts.each do |post| %>
+    <div class="post">
+      <h2 class="title">
+        <%= post.title %>
+      </h2>
+      <div class="body">
+        <%= post.body %>
+      </div>
+    </div>
+  <% end %>
+</section>
