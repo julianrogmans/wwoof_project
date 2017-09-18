@@ -1,0 +1,10 @@
+<section>
+  <% @posts.each do |post| %>
+    <article class="post">
+      <%= link_to post.title, blog_path(post) %>
+      <small>
+        <%= post.body %>
+      </small>
+    </article>
+  <% end %>
+</section>
