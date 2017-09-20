@@ -1,84 +1,96 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 .page-content {
   margin-top: 50px;
 }
 
-.header {
-  margin-top: 50px;
-  padding: 20px;
-  text-align: center;
-}
+.home {
+  // Place all the styles related to the Pages controller here.
+  // They will automatically be included in application.css.
+  // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.map-callouts {
-  background-image: image_url('map.png');
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  & :nth-child(even) {
-    justify-content: flex-end;
-  }
-}
-
-.map-callout {
-  display: flex;
-  width: 100%;
-
-  &.hidden {
-    visibility: hidden;
-  }
-
-  p {
-    background: #FDFDFD;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 20px #FDFDFD;
-    width: 50%;
-    margin: 40px;
+  .header {
+    margin-top: 50px;
     padding: 20px;
-  }
-}
-
-.schedule {
-  .schedule-header {
     text-align: center;
   }
 
-  .schedule-image {
+  .map-callouts {
+    background-image: image_url('map.png');
     width: 100%;
-    box-sizing: border-box;
-    padding: 40px;
-  }
-}
-
-.footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  .body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & :nth-child(even) {
+      justify-content: flex-end;
+    }
+  }
 
-    .footer-image {
-      width: auto;
-      height: 100px;
-      padding: 40px;
+  .map-callout {
+    display: flex;
+    width: 100%;
+
+    &.hidden {
+      visibility: hidden;
     }
 
-    .section {
-      text-align: center;
+    p {
+      background: #FDFDFD;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 20px #FDFDFD;
+      width: 50%;
+      margin: 40px;
       padding: 20px;
+    }
+  }
+
+  .schedule {
+    .schedule-header {
+      text-align: center;
+    }
+
+    .schedule-image {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 40px;
+    }
+  }
+
+  .footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .body {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 30%;
+
+      .footer-image {
+        width: auto;
+        height: 100px;
+        padding: 40px;
+      }
+
+      .section {
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+      }
     }
   }
 }

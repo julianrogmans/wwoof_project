@@ -1,10 +1,21 @@
-<section>
+<div class="blog-index">
   <% @posts.each do |post| %>
     <article class="post">
-      <%= link_to post.title, blog_path(post) %>
-      <small>
-        <%= post.body %>
-      </small>
+      <div class="content">
+        <div class="header">
+          <%= link_to post.title, blog_path(post) %>
+        </div>
+        <div class="date">
+          Created: <%= post.readable_created_at %>
+          <%= raw("<br>Updated: #{post.readable_updated_at}") if post.updated? %>
+        </div>
+        <div class="body">
+          <%= raw post.body %>
+        </div>
+      </div>
+      <div class="footer">
+        <%= link_to "Read more...", blog_path(post) %>
+      </div>
     </article>
   <% end %>
-</section>
+</div>

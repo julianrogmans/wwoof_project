@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(post_params)
+    @post = Post.find(params[:id])
   end
 
   def index
@@ -19,6 +19,12 @@ class BlogsController < ApplicationController
     @post = Post.create(post_params)
 
     redirect_to blog_path(@post)
+  end
+
+  def update
+    @post = Post.find(params[:id]).update_attributes(post_params)
+
+    redirect_to blog_path(params[:id])
   end
 
   private
