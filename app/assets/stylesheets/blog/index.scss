@@ -50,4 +50,15 @@
   .body {
     white-space: pre-line;
   }
+
+  .new_post {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background: darken(#FDFDFD, 60%);
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    z-index: 100;
+  }
 }
