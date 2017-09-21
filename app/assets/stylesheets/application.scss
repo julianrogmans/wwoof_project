@@ -14,12 +14,19 @@
  *= require_self
  */
 
-html, body, h1, h2, h3 {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: #FDFDFD
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-content {
+  margin-top: 50px;
 }
 
 .navigation {
@@ -36,7 +43,6 @@ html, body, h1, h2, h3 {
 
   a {
     color: #fff;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
