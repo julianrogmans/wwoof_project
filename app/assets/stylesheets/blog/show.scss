@@ -1,0 +1,21 @@
+.blog-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    background: darken(#FDFDFD, 25%);
+    border-radius: 10px;
+    width: 90%;
+    margin: 10px 0;
+    padding: 20px;
+
+    @media screen and (min-width: 800px) {
+      width: 50%;
+    }
+
+    .body {
+      white-space: pre-line;
+    }
+  }
+}

@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def farms
   end
 
-  def blog
-  end
-
   def faq
   end
 end

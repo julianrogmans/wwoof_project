@@ -1,0 +1,17 @@
+<div class="form">
+  <%= form_for @post, url: locals[:form_url], html: { class: "blogForm" } do |f| %>
+    <div class="header">
+      <%= f.label :title %>
+      <%= f.text_field :title, value: @post.title %>
+    </div>
+
+    <div class="body">
+      <%= f.label :body %>
+      <%= f.text_area :body, value: @post.body %>
+    </div>
+
+    <div class="submit">
+      <%= f.submit :submit %>
+    </div>
+  <% end %>
+</div>

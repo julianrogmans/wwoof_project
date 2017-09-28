@@ -1,0 +1,12 @@
+<div class="blog-show">
+  <div class="content">
+    <h1 class="header"><%= @post.title %></h1>
+    <div class="body">
+      <%= raw @post.body %>
+    </div>
+  </div>
+
+  <div class="footer">
+    <%= link_to "Edit", edit_blog_path(@post) %>
+  </div>
+</div>

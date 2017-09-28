@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .blogForm {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+
+
+    label {
+      margin-left: 2%;
+    }
+    input {
+      width: 96%;
+      padding: 5px;
+      margin: 2%;
+      font-size: 120%;
+      box-shadow: 0 0 2px #000;
+    }
+  }
+
+  .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-left: 2%;
+    }
+
+    textarea {
+      width: 96%;
+      margin: 2%;
+      padding: 5px;
+      height: 67vh;
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
+  }
+}
