@@ -10,6 +10,17 @@
       <%= f.text_area :body, value: @post.body %>
     </div>
 
+    <div class="controls">
+      <div class="control">
+        <%= f.label :status, "Draft" %>
+        <%= f.radio_button :status, "draft" %>
+      </div>
+      <div class="control">
+        <%= f.label :status, "Published" %>
+        <%= f.radio_button :status, "published" %>
+      </div>
+    </div>
+
     <div class="submit">
       <%= f.submit :submit %>
     </div>
